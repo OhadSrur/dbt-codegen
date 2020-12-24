@@ -20,9 +20,16 @@ renamed as (
 
     from source
 
+),
+
+final as (
+
+    select
+
+    from renamed
 )
 
-select * from renamed
+select * from final
 {% endset %}
 
 {% if execute %}
